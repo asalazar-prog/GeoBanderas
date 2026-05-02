@@ -1,4 +1,4 @@
-package com.asalazar.geobanderas.ui.theme
+package com.asalazar.geobanderas.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.font.FontFamily

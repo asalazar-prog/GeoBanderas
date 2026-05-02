@@ -1,4 +1,4 @@
-package com.asalazar.geobanderas.ui.theme
+package com.asalazar.geobanderas.presentation.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

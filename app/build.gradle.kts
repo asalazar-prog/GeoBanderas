@@ -53,6 +53,8 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.ui.text.google.fonts)
     implementation(libs.bundles.networking)
+    implementation(platform(libs.koin.bom))
+    implementation(libs.bundles.koin)
 
 
 

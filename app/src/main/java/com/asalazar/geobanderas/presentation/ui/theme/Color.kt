@@ -1,4 +1,4 @@
-package com.asalazar.geobanderas.ui.theme
+package com.asalazar.geobanderas.presentation.ui.theme
 import androidx.compose.ui.graphics.Color
 
 val primaryLight = Color(0xFF004AC6)

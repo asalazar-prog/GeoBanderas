@@ -11,6 +11,7 @@ composeBom = "2024.10.01"
 uiTextGoogleFonts = "1.7.5"
 kotlinxSerialization = "1.7.3"
 retrofit = "2.11.0"
+koin-bom = "4.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,12 +32,21 @@ androidx-ui-text-google-fonts = { group = "androidx.compose.ui", name = "ui-text
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-converter-kotlinSerialization = { group = "com.squareup.retrofit2", name = "converter-kotlinx-serialization", version.ref = "retrofit" }
+koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koin-bom" }
+koin-core = { group = "io.insert-koin", name = "koin-core" }
+koin-android = { group = "io.insert-koin", name = "koin-android" }
+koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose" }
 
 [bundles]
 networking = [
     "retrofit-core",
     "retrofit-converter-kotlinSerialization",
     "kotlinx-serialization-json"
+]
+koin = [
+    "koin-core",
+    "koin-android",
+    "koin-androidx-compose"
 ]
 
 [plugins]
