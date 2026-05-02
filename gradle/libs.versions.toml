@@ -12,6 +12,7 @@ uiTextGoogleFonts = "1.7.5"
 kotlinxSerialization = "1.7.3"
 retrofit = "2.11.0"
 koin-bom = "4.0.0"
+coilVersion = "3.0.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,6 +37,8 @@ koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koin-bo
 koin-core = { group = "io.insert-koin", name = "koin-core" }
 koin-android = { group = "io.insert-koin", name = "koin-android" }
 koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose" }
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coilVersion" }
+coil-network = { group = "io.coil-kt.coil3", name= "coil-network-okhttp", version.ref = "coilVersion"}
 
 [bundles]
 networking = [
@@ -47,6 +50,10 @@ koin = [
     "koin-core",
     "koin-android",
     "koin-androidx-compose"
+]
+coil = [
+    "coil-compose",
+    "coil-network"
 ]
 
 [plugins]

@@ -55,8 +55,7 @@ dependencies {
     implementation(libs.bundles.networking)
     implementation(platform(libs.koin.bom))
     implementation(libs.bundles.koin)
-
-
+    implementation(libs.bundles.coil)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

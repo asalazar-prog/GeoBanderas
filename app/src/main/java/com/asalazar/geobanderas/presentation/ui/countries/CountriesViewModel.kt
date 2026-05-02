@@ -26,7 +26,7 @@ class CountriesViewModel(
             _uiState.value = UiState.Loading
             try {
                 val countries = countryRepository.getAmericaCountries()
-                _uiState.value = UiState.Success(countries)
+                _uiState.value = UiState.Success(countries.sortedBy { it.name.official })
             } catch (e: Exception) {
                 _uiState.value = UiState.Error(e)
             }
